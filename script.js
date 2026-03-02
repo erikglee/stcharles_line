@@ -302,6 +302,18 @@ const featuredPlaces = [
     sourceUrl: "https://www.hnoc.org/visit/our-campus"
   },
   {
+    name: "Ogden Museum of Southern Art",
+    category: "landmark",
+    subtitle: "Warehouse District art museum",
+    description:
+      "925 Camp St, New Orleans, LA 70130. This marker is placed in the Warehouse Arts District on the museum's Camp Street block near the Contemporary Arts Center and the National WWII Museum.",
+    coordinates: [29.94295, -90.07105],
+    accessNote:
+      "A major Southern art museum with rotating exhibitions, a strong permanent collection, and regular public programs in the downtown arts district.",
+    sourceLabel: "Ogden Museum visit info",
+    sourceUrl: "https://ogdenmuseum.org/visit/hours/"
+  },
+  {
     name: "City Park",
     category: "park",
     subtitle: "Major park destination",
