@@ -527,8 +527,6 @@ const markerLayer = L.layerGroup().addTo(map);
 const featuredPlaceLayer = L.layerGroup().addTo(map);
 const muralLayer = L.layerGroup().addTo(map);
 const markerFilterSelect = document.getElementById("marker-filter");
-const mapShell = document.getElementById("map-shell");
-const mapFullscreenToggle = document.getElementById("map-fullscreen-toggle");
 const stopList = document.getElementById("stop-list");
 const routeList = document.getElementById("route-list");
 const frequencyList = document.getElementById("frequency-list");
@@ -546,24 +544,6 @@ let routeLine = null;
 let gardenDistrictLayer = null;
 let route11GuideLayer = null;
 let loadedStops = [];
-
-function syncMapSize() {
-  window.requestAnimationFrame(() => {
-    map.invalidateSize();
-  });
-}
-
-function setMapFullscreen(isFullscreen) {
-  if (!mapShell || !mapFullscreenToggle) {
-    return;
-  }
-
-  mapShell.classList.toggle("is-fullscreen", isFullscreen);
-  document.body.classList.toggle("map-is-fullscreen", isFullscreen);
-  mapFullscreenToggle.textContent = isFullscreen ? "Exit full screen" : "Full screen map";
-  mapFullscreenToggle.setAttribute("aria-pressed", isFullscreen ? "true" : "false");
-  syncMapSize();
-}
 
 function buildStopPopup(stop) {
   return `
@@ -1222,25 +1202,6 @@ if (markerFilterSelect) {
     applyMarkerFilter(event.target.value);
   });
 }
-
-if (mapFullscreenToggle) {
-  mapFullscreenToggle.addEventListener("click", () => {
-    const isFullscreen = mapShell?.classList.contains("is-fullscreen");
-    setMapFullscreen(!isFullscreen);
-  });
-}
-
-document.addEventListener("keydown", (event) => {
-  if (event.key === "Escape" && mapShell?.classList.contains("is-fullscreen")) {
-    setMapFullscreen(false);
-  }
-});
-
-window.addEventListener("resize", () => {
-  if (mapShell?.classList.contains("is-fullscreen")) {
-    syncMapSize();
-  }
-});
 
 window.addEventListener("load", () => {
   initMapData();
