@@ -1,0 +1,24 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Garden District boundary",
+        "description": "Approximate outline using the broader National Register and Garden District Association footprint bounded by Louisiana Avenue, Josephine Street, Magazine Street, and Carondelet Street."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-90.090833, 29.929236],
+            [-90.078703, 29.938333],
+            [-90.074583, 29.930194],
+            [-90.088139, 29.922847],
+            [-90.090833, 29.929236]
+          ]
+        ]
+      }
+    }
+  ]
+}

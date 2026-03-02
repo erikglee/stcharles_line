@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>St. Charles Line Guide</title>
+  <meta
+    name="description"
+    content="An interactive guide to the St. Charles streetcar line in New Orleans."
+  >
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Manrope:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="hero__content">
+      <p class="eyebrow">New Orleans Streetcar Guide</p>
+      <h1>Explore the St. Charles Line</h1>
+      <p class="hero__lede">
+        This site is ready for GitHub Pages and built to grow into an interactive guide for
+        your favorite stops, landmarks, and hidden finds along the route.
+      </p>
+      <a class="hero__cta" href="#map-heading">Open the map</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="map-section" aria-labelledby="map-heading">
+      <div class="section-heading">
+        <p class="eyebrow">Interactive Map</p>
+        <h2 id="map-heading">Follow the line through the city</h2>
+        <p>
+          The map now uses current RTA GTFS stop coordinates for the St. Charles timing-point pins.
+          These are exact stop points aligned to the published schedule checkpoints, not every
+          physical stop pole on the full line. It also highlights the current Route 11 (Magazine)
+          corridor along the Magazine segment that is most relevant to this guide, featured stops
+          are color-coded by type, and the marker menu lets you show one marker type at a time or
+          keep all markers visible.
+        </p>
+      </div>
+      <div class="map-toolbar">
+        <label class="map-filter" for="marker-filter">
+          <span>Visible markers</span>
+          <select id="marker-filter" name="marker-filter">
+            <option value="all" selected>All markers</option>
+            <option value="timing-stops">Streetcar timing points</option>
+            <option value="public-art">Public art</option>
+            <option value="gallery">Galleries</option>
+            <option value="maker-shop">Local maker shops</option>
+            <option value="coffee-bakery">Coffee / bakery</option>
+            <option value="restaurant">Restaurants</option>
+            <option value="landmark">Landmarks</option>
+            <option value="historic">Historic sites</option>
+            <option value="transit">Transit</option>
+            <option value="park">Parks</option>
+          </select>
+        </label>
+      </div>
+      <div id="map" aria-label="Map of the St. Charles streetcar line"></div>
+    </section>
+
+    <section class="schedule-section" id="schedule" aria-labelledby="schedule-heading">
+      <div class="section-heading">
+        <p class="eyebrow">Timetable Summary</p>
+        <h2 id="schedule-heading">Travel times and service frequency</h2>
+        <p>
+          This section summarizes the current official timetable using the published timing points.
+          The travel-time grids use scheduled ranges because exact ride times vary by trip and time
+          of day. The current PDF shows the same timetable for weekdays and weekends.
+        </p>
+      </div>
+
+      <div id="frequency-list" class="frequency-list" aria-label="Service frequency summary"></div>
+
+      <div class="matrix-block">
+        <h3>Outbound travel-time matrix</h3>
+        <p class="matrix-note">
+          Direction: Canal at Carondelet to Carrollton at Claiborne. Cells show typical scheduled
+          minute ranges between timing points.
+        </p>
+        <div id="outbound-matrix" class="matrix-wrap" aria-label="Outbound travel-time matrix"></div>
+      </div>
+
+      <div class="matrix-block">
+        <h3>Inbound travel-time matrix</h3>
+        <p class="matrix-note">
+          Direction: Carrollton at Claiborne to Canal at Carondelet. Cells show typical scheduled
+          minute ranges between timing points.
+        </p>
+        <div id="inbound-matrix" class="matrix-wrap" aria-label="Inbound travel-time matrix"></div>
+      </div>
+
+      <p class="source-note">
+        Source:
+        <a
+          href="https://norta.com/getmedia/f3386f81-5f4c-44ce-b0ec-cc26ca4f6003/route_49.pdf"
+          target="_blank"
+          rel="noreferrer"
+        >New Orleans RTA Winter 2026 Route 12 timetable (revised January 18, 2026)</a>
+      </p>
+    </section>
+
+    <section class="resources-section" id="music" aria-labelledby="music-heading">
+      <div class="section-heading">
+        <p class="eyebrow">Live Music</p>
+        <h2 id="music-heading">WWOZ Livewire Calendar</h2>
+        <p>
+          For live music planning on Thursday, March 5, 2026, this link goes straight to the WWOZ
+          Livewire calendar for that date.
+        </p>
+      </div>
+      <a
+        class="link-card"
+        href="https://www.wwoz.org/calendar/livewire-music?date=2026-03-05"
+        target="_blank"
+        rel="noreferrer"
+      >
+        Open the WWOZ Livewire music calendar for March 5, 2026
+      </a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Built as a static site for GitHub Pages deployment.</p>
+  </footer>
+
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""
+  ></script>
+  <script src="data/app-data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

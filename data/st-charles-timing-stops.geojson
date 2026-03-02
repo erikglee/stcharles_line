@@ -1,0 +1,131 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "order": 1,
+        "name": "Canal at Carondelet",
+        "subtitle": "Official GTFS stop",
+        "description": "Downtown terminal stop aligned to the official schedule checkpoint.",
+        "stop_id": "100412-2098",
+        "stop_code": 8361,
+        "stop_name": "Canal at Carondelet",
+        "location_type": 0,
+        "wheelchair_boarding": 2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-90.07021, 29.95372]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "order": 2,
+        "name": "Howard Ave. at Carondelet",
+        "subtitle": "Official GTFS stop",
+        "description": "Exact stop coordinate for the first upriver timing point.",
+        "stop_id": "100412-2103",
+        "stop_code": 8367,
+        "stop_name": "Howard Ave. at Carondelet",
+        "location_type": 0,
+        "wheelchair_boarding": 2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-90.0732, 29.9438]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "order": 3,
+        "name": "St Charles at Jackson",
+        "subtitle": "Official GTFS stop",
+        "description": "Exact stop coordinate for the lower Garden District timing point.",
+        "stop_id": "100412-945",
+        "stop_code": 244,
+        "stop_name": "St Charles at Jackson",
+        "location_type": 0,
+        "wheelchair_boarding": 2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-90.08069, 29.93402]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "order": 4,
+        "name": "St Charles at Napoleon",
+        "subtitle": "Official GTFS stop",
+        "description": "Exact stop coordinate for the mid-line uptown timing point.",
+        "stop_id": "100412-2177",
+        "stop_code": 8471,
+        "stop_name": "St Charles at Napoleon",
+        "location_type": 0,
+        "wheelchair_boarding": 2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-90.10186, 29.92648]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "order": 5,
+        "name": "St Charles at Broadway",
+        "subtitle": "Official GTFS stop",
+        "description": "Exact stop coordinate for the university-side timing point.",
+        "stop_id": "100412-1334",
+        "stop_code": 3602,
+        "stop_name": "St Charles at Broadway",
+        "location_type": 0,
+        "wheelchair_boarding": 2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-90.12679, 29.93728]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "order": 6,
+        "name": "S. Carrollton at Willow",
+        "subtitle": "Official GTFS stop",
+        "description": "Exact stop coordinate near the western turn before the terminal.",
+        "stop_id": "100412-2174",
+        "stop_code": 8469,
+        "stop_name": "S. Carrollton at Willow",
+        "location_type": 0,
+        "wheelchair_boarding": 2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-90.12813, 29.94861]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "order": 7,
+        "name": "S. Carrollton at S. Claiborne",
+        "subtitle": "Official GTFS stop",
+        "description": "Exact GTFS terminal stop at the uptown end of the line.",
+        "stop_id": "100412-1813",
+        "stop_code": 716,
+        "stop_name": "S. Carrollton at S. Claiborne",
+        "location_type": 0,
+        "wheelchair_boarding": 2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-90.12053, 29.95565]
+      }
+    }
+  ]
+}

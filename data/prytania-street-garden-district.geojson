@@ -1,0 +1,22 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Prytania Street Guide"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-90.0796, 29.9375],
+          [-90.0814, 29.9362],
+          [-90.0833, 29.9349],
+          [-90.0855, 29.9334],
+          [-90.0876, 29.9319],
+          [-90.0897, 29.9304]
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Downtown Museums Walk"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-90.0782, 29.9436],
+          [-90.0771, 29.9418],
+          [-90.0745, 29.9406],
+          [-90.0733, 29.9428]
+        ]
+      }
+    }
+  ]
+}

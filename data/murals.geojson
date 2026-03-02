@@ -1,0 +1,173 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Second Line Mural",
+        "description": "",
+        "source": "Imported from murals.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-90.0499161, 29.9686011]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Faubourg Marigny",
+        "description": "Big Freida",
+        "source": "Imported from murals.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-90.0572602, 29.9778942]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lil Wayne Mural",
+        "description": "",
+        "source": "Imported from murals.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-90.1227995, 29.9615924]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dr. John Mural",
+        "description": "",
+        "source": "Imported from murals.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-90.0795793, 29.9421856]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Greetings from NOLA Mural",
+        "description": "",
+        "source": "Imported from murals.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-90.077498, 29.9300856]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "320 Exchange Pl",
+        "description": "",
+        "source": "Imported from murals.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-90.0666956, 29.9549536]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pirate King Coffee",
+        "description": "Lafittte's bedroom cannons",
+        "source": "Imported from murals.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-90.066751, 29.9549606]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Witches Brew Gallery & Haunted Sanctuary",
+        "description": "",
+        "source": "Imported from murals.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-90.0670111, 29.9543556]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Brennan's Kitchen Window",
+        "description": "To watch",
+        "source": "Imported from murals.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-90.066646, 29.9561453]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Antoine's Restaurant - Baked Alaska",
+        "description": "",
+        "source": "Imported from murals.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-90.069078, 29.9566087]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rouses Market - Musicians Street Poets",
+        "description": "",
+        "source": "Imported from murals.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-90.064786, 29.9581406]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cabrini Playground",
+        "description": "",
+        "source": "Imported from murals.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-90.0627517, 29.9641857]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rusty Rainbow Bridge",
+        "description": "climb bridge for views",
+        "source": "Imported from murals.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-90.0432005, 29.9615317]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sucré",
+        "description": "",
+        "source": "Imported from murals.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-90.0681622, 29.9545902]
+      }
+    }
+  ]
+}

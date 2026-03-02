@@ -1,0 +1,24 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "St. Charles Line timing-point spine",
+        "description": "Polyline connecting the exact GTFS timing-point stop coordinates used by this site."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-90.07021, 29.95372],
+          [-90.0732, 29.9438],
+          [-90.08069, 29.93402],
+          [-90.10186, 29.92648],
+          [-90.12679, 29.93728],
+          [-90.12813, 29.94861],
+          [-90.12053, 29.95565]
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Route B: Streetcar + Mansions Hop"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-90.0906, 29.9288],
+          [-90.0887, 29.9275],
+          [-90.0847, 29.9305],
+          [-90.0862, 29.9314],
+          [-90.0893, 29.9297],
+          [-90.0906, 29.9288]
+        ]
+      }
+    }
+  ]
+}
