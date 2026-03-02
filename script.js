@@ -159,39 +159,39 @@ const route11GuideGeoJson = {
 const placeCategoryStyles = {
   "public-art": {
     label: "Public art",
-    color: "#c7482c"
+    color: "#e65a3a"
   },
   gallery: {
     label: "Gallery",
-    color: "#4d6a8a"
+    color: "#5a54d6"
   },
   "maker-shop": {
     label: "Local maker shop",
-    color: "#7b8b3d"
+    color: "#1d8a78"
   },
   "coffee-bakery": {
     label: "Coffee / bakery",
-    color: "#6b4f2a"
+    color: "#d18a1f"
   },
   restaurant: {
     label: "Restaurant",
-    color: "#b54833"
+    color: "#cf3f6b"
   },
   landmark: {
     label: "Landmark",
-    color: "#8c5e34"
+    color: "#7a58a6"
   },
   historic: {
     label: "Historic site",
-    color: "#6a4c3c"
+    color: "#7a5a44"
   },
   transit: {
     label: "Transit",
-    color: "#234d9b"
+    color: "#1f6fe5"
   },
   park: {
     label: "Park",
-    color: "#2d7d46"
+    color: "#2f9f57"
   },
   default: {
     label: "Featured stop",
@@ -437,6 +437,18 @@ const featuredPlaces = [
     sourceUrl: "https://www.galleryburguieres.com/"
   },
   {
+    name: "Great American Alligator Museum",
+    category: "landmark",
+    subtitle: "Magazine museum stop",
+    description:
+      "2051 Magazine St, New Orleans, LA 70130. This marker is placed on the 2050 block of Magazine Street just beside the nearby gallery cluster.",
+    coordinates: [29.93024, -90.07792],
+    accessNote:
+      "A quirky Lower Garden District stop focused on alligator history, culture, and themed exhibits.",
+    sourceLabel: "Address provided",
+    sourceUrl: "https://maps.google.com/?q=2051+Magazine+St,+New+Orleans,+LA+70130"
+  },
+  {
     name: "CR Coffee Shop",
     category: "coffee-bakery",
     subtitle: "Coffee stop",
@@ -515,6 +527,8 @@ const markerLayer = L.layerGroup().addTo(map);
 const featuredPlaceLayer = L.layerGroup().addTo(map);
 const muralLayer = L.layerGroup().addTo(map);
 const markerFilterSelect = document.getElementById("marker-filter");
+const mapShell = document.getElementById("map-shell");
+const mapFullscreenToggle = document.getElementById("map-fullscreen-toggle");
 const stopList = document.getElementById("stop-list");
 const routeList = document.getElementById("route-list");
 const frequencyList = document.getElementById("frequency-list");
@@ -532,6 +546,24 @@ let routeLine = null;
 let gardenDistrictLayer = null;
 let route11GuideLayer = null;
 let loadedStops = [];
+
+function syncMapSize() {
+  window.requestAnimationFrame(() => {
+    map.invalidateSize();
+  });
+}
+
+function setMapFullscreen(isFullscreen) {
+  if (!mapShell || !mapFullscreenToggle) {
+    return;
+  }
+
+  mapShell.classList.toggle("is-fullscreen", isFullscreen);
+  document.body.classList.toggle("map-is-fullscreen", isFullscreen);
+  mapFullscreenToggle.textContent = isFullscreen ? "Exit full screen" : "Full screen map";
+  mapFullscreenToggle.setAttribute("aria-pressed", isFullscreen ? "true" : "false");
+  syncMapSize();
+}
 
 function buildStopPopup(stop) {
   return `
@@ -1190,6 +1222,25 @@ if (markerFilterSelect) {
     applyMarkerFilter(event.target.value);
   });
 }
+
+if (mapFullscreenToggle) {
+  mapFullscreenToggle.addEventListener("click", () => {
+    const isFullscreen = mapShell?.classList.contains("is-fullscreen");
+    setMapFullscreen(!isFullscreen);
+  });
+}
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && mapShell?.classList.contains("is-fullscreen")) {
+    setMapFullscreen(false);
+  }
+});
+
+window.addEventListener("resize", () => {
+  if (mapShell?.classList.contains("is-fullscreen")) {
+    syncMapSize();
+  }
+});
 
 window.addEventListener("load", () => {
   initMapData();

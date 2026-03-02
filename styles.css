@@ -157,17 +157,79 @@ main {
 }
 
 #map {
-  margin-top: 24px;
-  min-height: 500px;
+  min-height: 100%;
+  height: clamp(420px, 62vh, 760px);
   border-radius: 22px;
   border: 1px solid rgba(19, 111, 99, 0.12);
   overflow: hidden;
 }
 
+.map-shell {
+  margin-top: 24px;
+  position: relative;
+  min-height: 500px;
+  border-radius: 22px;
+  background: rgba(255, 249, 239, 0.42);
+}
+
+.map-shell.is-fullscreen {
+  position: fixed;
+  inset: 0;
+  z-index: 1200;
+  margin-top: 0;
+  min-height: 100dvh;
+  padding: 12px;
+  border-radius: 0;
+  background:
+    linear-gradient(180deg, rgba(12, 80, 72, 0.88), rgba(12, 80, 72, 0.76)),
+    rgba(15, 28, 24, 0.72);
+}
+
+.map-shell.is-fullscreen #map {
+  height: calc(100dvh - 24px);
+  border-radius: 18px;
+  border-color: rgba(255, 249, 239, 0.22);
+}
+
+body.map-is-fullscreen {
+  overflow: hidden;
+}
+
 .map-toolbar {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: end;
+  gap: 14px;
   margin-top: 24px;
+  flex-wrap: wrap;
+}
+
+.map-fullscreen-button {
+  appearance: none;
+  border: 1px solid rgba(19, 111, 99, 0.18);
+  border-radius: 16px;
+  padding: 13px 16px;
+  background:
+    linear-gradient(180deg, rgba(19, 111, 99, 0.96), rgba(12, 80, 72, 0.94));
+  color: #f7f3e9;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    border-color 180ms ease;
+}
+
+.map-fullscreen-button:hover,
+.map-fullscreen-button:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(12, 80, 72, 0.18);
+}
+
+.map-fullscreen-button:focus-visible {
+  outline: 2px solid rgba(19, 111, 99, 0.35);
+  outline-offset: 2px;
 }
 
 .map-filter {
@@ -458,14 +520,32 @@ main {
   }
 
   #map {
-    min-height: 380px;
+    height: clamp(360px, 58vh, 620px);
   }
 
   .map-toolbar {
-    justify-content: stretch;
+    align-items: stretch;
   }
 
   .map-filter {
     min-width: 100%;
+  }
+
+  .map-fullscreen-button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .map-shell {
+    min-height: 380px;
+  }
+
+  .map-shell.is-fullscreen {
+    padding: 8px;
+  }
+
+  .map-shell.is-fullscreen #map {
+    height: calc(100dvh - 16px);
+    border-radius: 14px;
   }
 }

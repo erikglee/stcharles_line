@@ -66,8 +66,13 @@
             <option value="park">Parks</option>
           </select>
         </label>
+        <button type="button" class="map-fullscreen-button" id="map-fullscreen-toggle">
+          Full screen map
+        </button>
       </div>
-      <div id="map" aria-label="Map of the St. Charles streetcar line"></div>
+      <div class="map-shell" id="map-shell">
+        <div id="map" aria-label="Map of the St. Charles streetcar line"></div>
+      </div>
     </section>
 
     <section class="schedule-section" id="schedule" aria-labelledby="schedule-heading">
