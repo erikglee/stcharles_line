@@ -229,6 +229,78 @@ const featuredPlaces = [
     sourceUrl: "https://www.lafayettecemeteryno1.org/faqs-about-cemetery-closure.html"
   },
   {
+    name: "St. Charles Avenue Mansions",
+    category: "landmark",
+    subtitle: "Architecture highlight",
+    description:
+      "Representative Garden District marker for the classic St. Charles mansion corridor near the Washington/Jackson section.",
+    coordinates: [29.93096, -90.08527],
+    accessNote:
+      "Use this as a base pin for the grand estates and architectural facades along St. Charles Avenue in the Garden District.",
+    sourceLabel: "St. Charles corridor reference",
+    sourceUrl: "https://www.nola.com/entertainment_life/home_garden/new-orleans-100-historic-homes-st-charles-avenue/article_4d4f0f7c-1478-11eb-ba8f-cf59845804f8.html"
+  },
+  {
+    name: "Commander's Palace Area",
+    category: "landmark",
+    subtitle: "Garden District highlight",
+    description:
+      "1403 Washington Ave, New Orleans, LA 70130. This pin marks the Commander's Palace corner and surrounding Garden District residential blocks.",
+    coordinates: [29.928834, -90.084213],
+    accessNote:
+      "Great base point for nearby homes, gardens, and photo stops around Washington, Prytania, and Coliseum.",
+    sourceLabel: "Commander's Palace location",
+    sourceUrl: "https://www.commanderspalace.com/"
+  },
+  {
+    name: "Joseph Clark House",
+    category: "historic",
+    subtitle: "Potential stop",
+    description:
+      "2531 Gov Nicholls St, New Orleans, LA 70119. Added from your shared stop list as the Clark House associated with St. Luke's.",
+    coordinates: [29.96921, -90.08241],
+    accessNote:
+      "This stop name appears in multiple places online; this marker uses the documented Clark House address at St. Luke's campus.",
+    sourceLabel: "Clark House address reference",
+    sourceUrl: "https://www.zillow.com/homedetails/2531-Gov-Nicholls-St-New-Orleans-LA-70119/2095275129_zpid/"
+  },
+  {
+    name: "Pitot House",
+    category: "historic",
+    subtitle: "Historic house museum",
+    description:
+      "1440 Moss St, New Orleans, LA 70119. Creole colonial-era house museum on Bayou St. John.",
+    coordinates: [29.981667, -90.088056],
+    accessNote:
+      "A strong history stop if you are extending beyond the Garden District into Bayou St. John / City Park side.",
+    sourceLabel: "Pitot House address",
+    sourceUrl: "https://savingplaces.org/places/pitot-house"
+  },
+  {
+    name: "Gallier House (Exterior)",
+    category: "historic",
+    subtitle: "French Quarter historic home",
+    description:
+      "1132 Royal St, New Orleans, LA 70116. Marker uses Library of Congress coordinate data for Gallier House.",
+    coordinates: [29.961716, -90.061318],
+    accessNote:
+      "Best used as a French Quarter architecture stop focused on exterior and period details.",
+    sourceLabel: "Library of Congress record",
+    sourceUrl: "https://www.loc.gov/item/la0286/"
+  },
+  {
+    name: "Private Manicured Gardens Area",
+    category: "landmark",
+    subtitle: "Garden District highlight",
+    description:
+      "Representative marker for interior Garden District blocks known for private landscaped gardens and courtyard-heavy homes.",
+    coordinates: [29.92946, -90.08238],
+    accessNote:
+      "This is a neighborhood highlight marker rather than a single public venue.",
+    sourceLabel: "Garden District walking context",
+    sourceUrl: "https://freetoursbyfoot.com/garden-district-walking-tour/"
+  },
+  {
     name: "Magazine at Natatorium",
     category: "transit",
     subtitle: "Transit connection",
@@ -523,6 +595,46 @@ const featuredPlaces = [
       "Macarons and dessert-boutique energy in the Magazine dining corridor.",
     sourceLabel: "Sucre",
     sourceUrl: "https://shopsucre.com/pages/locations"
+  },
+  {
+    name: "Surrey's Cafe & Juice Bar",
+    category: "coffee-bakery",
+    subtitle: "Brunch and juice stop",
+    description:
+      "1418 Magazine St, New Orleans, LA 70130. Long-running Magazine breakfast and juice bar in the Lower Garden District.",
+    coordinates: [29.935778, -90.0719315],
+    accessNote:
+      "Good pick for breakfast, brunch, or juice stop before or after the Garden District core blocks.",
+    sourceLabel: "Surrey's listing",
+    sourceUrl: "https://www.mapquest.com/us/louisiana/surreys-juice-bar-8510753"
+  },
+  {
+    name: "District Donuts Sliders Brew",
+    category: "coffee-bakery",
+    subtitle: "Brunch and donuts",
+    description:
+      "2209 Magazine St, New Orleans, LA 70130. Added from your list (spelled \"Distict\" there) using the Magazine flagship location.",
+    coordinates: [29.9294981, -90.0771649],
+    accessNote:
+      "Popular all-day stop for donuts, breakfast sandwiches, and coffee in the Lower Garden District segment of Magazine.",
+    sourceLabel: "District Magazine location",
+    sourceUrl: "https://www.districtdonuts.com/location/magazine/",
+    secondarySourceLabel: "Coordinate reference",
+    secondarySourceUrl: "https://www.latlong.net/poi/district-donuts-sliders-brew-104847"
+  },
+  {
+    name: "La Boulangerie",
+    category: "coffee-bakery",
+    subtitle: "Bakery and cafe",
+    description:
+      "4600 Magazine St, New Orleans, LA 70115. Uptown bakery and pastry stop on the Magazine corridor.",
+    coordinates: [29.9204677, -90.1039516],
+    accessNote:
+      "Reliable pastry, bread, and casual lunch stop in the upper Magazine section.",
+    sourceLabel: "La Boulangerie address",
+    sourceUrl: "https://laboulangerienola.com/",
+    secondarySourceLabel: "Coordinate reference",
+    secondarySourceUrl: "https://www.latlong.net/poi/la-boulangerie-104975"
   }
 ];
 
